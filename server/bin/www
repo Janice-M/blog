@@ -1,0 +1,2 @@
+var port = normalizePort(porcess.enc.port || '5000');
+app.set('port', port)
