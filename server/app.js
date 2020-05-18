@@ -5,6 +5,7 @@ var cookieParser = require ('cookie-parser');
 var logger = require ('morgan');
 
 var app =express ();
+var indexRouter = require ('./routes');
 
 
 app.use(logger(dev));
@@ -13,7 +14,7 @@ app.use(express.urlencoded({etended : false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+app.use('./'.indexRouter)
 module.exports = app;
 
 /* storing port in express for peaceful coextistenee of server anc client */
