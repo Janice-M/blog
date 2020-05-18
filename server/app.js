@@ -15,3 +15,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 module.exports = app;
+
+/* storing port in express for peaceful coextistenee of server anc client */
+
+var port = normalizePort(porcess.enc.port || '5000');
+app.set('port', port);
