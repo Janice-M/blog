@@ -5,9 +5,8 @@
   "scripts": {
     "start": "node ./bin/www"
   },
-  "proxy" : "http://localhost:5000",
+  "proxy": "http://localhost:5000",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
