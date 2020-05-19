@@ -8,4 +8,11 @@ const  Home = props => {
         .then (res=>setState(res.data))
     }, [])
     const [state, setState] = useState ('')
-}
+
+    retuen (
+        <div>
+        <h3>welcome home</h3>
+        <p> {state}</p>
+        </div>
+    )
+};
