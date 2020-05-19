@@ -9,7 +9,7 @@ const  Home = props => {
     }, [])
     const [state, setState] = useState ('')
 
-    retuen (
+    return (
         <div>
         <h3>welcome home</h3>
         <p> {state}</p>
