@@ -5,6 +5,7 @@ const  Home = props => {
     useEffect (()=> {
 
         axios.get('api/hello')
-        .then (res=>)
+        .then (res=>setState(res.data))
     }, [])
+    const [state, setState] = useState ('')
 }
